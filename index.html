@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aicha — CV </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  <div class="noise"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo">A.</div>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  
+  <header id="hero">
+    <div class="hero-bg-text">AICHA</div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="c:\Users\atyq1\OneDrive\Images\Personal.photo.JPG" alt="Aicha"/>
+        </div>
+        <div class="hero-photo-ring"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-hello">Bonjour, je suis</p>
+        <h1 class="hero-name">Aicha<span class="dot">.</span></h1>
+        <h2 class="hero-title">Étudiante en <span class="highlight">Informatique</span></h2>
+        <p class="hero-sub">Développeuse passionnée · L2 Info · Casablanca</p>
+        <div class="hero-links">
+          <a href="mailto:achaatyq@5230.uca.ac.ma" class="hero-link"><i class="fas fa-envelope"></i> achaatyq@5230.uca.ac.ma</a>
+          <a href="https://linkedin.com/in/aicha" target="_blank" class="hero-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/atyqaicha-2003" target="_blank" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <a href="#projects" class="cta-btn">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="scroll-hint"><span></span></div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-label">01 / À propos</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">Qui suis-je<span class="dot">?</span></h2>
+        <p>Je m'appelle <strong>Aicha</strong>, étudiante en deuxième année de Licence en Informatique. Passionnée par le développement web et les nouvelles technologies, je construis des interfaces modernes et intuitives qui allient esthétique et fonctionnalité.</p>
+        <p>Mon parcours m'a permis de maîtriser les fondamentaux du développement — HTML, CSS, JavaScript, mais aussi des outils comme React et jQuery. J'aime relever des défis techniques tout en gardant une attention particulière à l'expérience utilisateur.</p>
+        <p>En dehors du code, je m'intéresse au design graphique, à la résolution de problèmes algorithmiques, et j'aspire à intégrer une équipe innovante pour contribuer à des projets à impact réel.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><span class="stat-num" data-val="2">0</span><span class="stat-label">Années d'études</span></div>
+        <div class="stat-card"><span class="stat-num" data-val="5">0</span><span class="stat-label">Projets réalisés</span></div>
+        <div class="stat-card"><span class="stat-num" data-val="8">0</span><span class="stat-label">Technologies</span></div>
+        <div class="stat-card"><span class="stat-num" data-val="3">0</span><span class="stat-label">Langues</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-label">02 / Compétences</div>
+    <h2 class="section-title">Mes outils<span class="dot">.</span></h2>
+    <div class="skills-container">
+      <div class="skills-col">
+        <h3>Techniques</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>HTML / CSS</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>jQuery</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>React JS</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Python</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>SQL / MySQL</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h3>Personnelles</h3>
+        <div class="soft-tags">
+          <span class="tag">Curiosité intellectuelle</span>
+          <span class="tag">Résolution de problèmes</span>
+          <span class="tag">Travail en équipe</span>
+          <span class="tag">Autonomie</span>
+          <span class="tag">Créativité</span>
+          <span class="tag">Adaptabilité</span>
+          <span class="tag">Communication</span>
+          <span class="tag">Rigueur</span>
+        </div>
+        <h3 style="margin-top:2rem">Langues</h3>
+        <div class="lang-list">
+          <div class="lang-item"><span>Arabe</span><div class="lang-dots"><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-filled"></span></div></div>
+          <div class="lang-item"><span>Français</span><div class="lang-dots"><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-empty"></span></div></div>
+          <div class="lang-item"><span>Anglais</span><div class="lang-dots"><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-filled"></span><span class="dot-empty"></span><span class="dot-empty"></span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="section-label">03 / Formation</div>
+    <h2 class="section-title">Mon parcours<span class="dot">.</span></h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-year">2024 — 2026</span>
+            <h3>Licence en Informatique — L2</h3>
+            <p class="timeline-school">Université Hassan II · Casablanca</p>
+            <i class="fas fa-chevron-down timeline-arrow"></i>
+          </div>
+          <div class="timeline-body">
+            <p>Algorithmique avancée, Bases de données, Développement web, Programmation orientée objet, Réseaux informatiques, Systèmes d'exploitation.</p>
+            <div class="timeline-tags"><span>Python</span><span>Java</span><span>SQL</span><span>Web</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-year">2023 — 2024</span>
+            <h3>Licence en Informatique — L1</h3>
+            <p class="timeline-school">Université Hassan II · Casablanca</p>
+            <i class="fas fa-chevron-down timeline-arrow"></i>
+          </div>
+          <div class="timeline-body">
+            <p>Introduction à la programmation, Mathématiques pour l'informatique, Architecture des ordinateurs, Algorithmique de base.</p>
+            <div class="timeline-tags"><span>C</span><span>Scratch</span><span>Algorithmique</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-year">2023</span>
+            <h3>Baccalauréat — Sciences Mathématiques B</h3>
+            <p class="timeline-school">Lycée · Casablanca</p>
+            <i class="fas fa-chevron-down timeline-arrow"></i>
+          </div>
+          <div class="timeline-body">
+            <p>Obtention du baccalauréat avec mention Bien. Spécialisation en mathématiques et informatique.</p>
+            <div class="timeline-tags"><span>Mention Bien</span><span>Maths</span><span>Physique</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS (React) ===== -->
+  <section id="projects">
+    <div class="section-label">04 / Projets</div>
+    <h2 class="section-title">Ce que j'ai créé<span class="dot">.</span></h2>
+    <div id="react-projects"></div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-label">05 / Contact</div>
+    <h2 class="section-title">Travaillons ensemble<span class="dot">.</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Tu as un projet, une question, ou simplement envie d'échanger ? N'hésite pas à me contacter !</p>
+        <div class="contact-links">
+          <a href="mailto:achaatyq@5230.uca.ac.ma"><i class="fas fa-envelope"></i> achaatyq@5230.uca.ac.ma</a>
+          <a href="https://linkedin.com/in/aicha" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/aicha</a>
+          <a href="https://github.com/atyqaicha-2003" target="_blank"><i class="fab fa-github"></i> github.com/atyqaicha-2003</a>
+        </div>
+      </div>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="f-name" placeholder="Votre nom"/>
+          <span class="form-error" id="err-name"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="f-email" placeholder="Votre email"/>
+          <span class="form-error" id="err-email"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="f-msg" rows="5" placeholder="Votre message..."></textarea>
+          <span class="form-error" id="err-msg"></span>
+        </div>
+        <button type="submit" class="submit-btn">Envoyer <i class="fas fa-paper-plane"></i></button>
+        <div id="form-success" style="display:none">✅ Message envoyé avec succès !</div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Conçu & développé par <strong>Aicha</strong> · 2026</p>
+    <p class="footer-sub">HTML · CSS · jQuery · React</p>
+  </footer>
+
+  <!-- ===== REACT — inline dans HTML ===== -->
+  <script type="text/babel">
+    const { useState } = React;
+
+    function ProjectCard({ number, title, description, techs, github, demo }) {
+      return (
+        <div className="project-card">
+          <p className="project-num">/{String(number).padStart(2, '0')}</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <div className="project-techs">
+            {techs.map((t, i) => <span key={i}>{t}</span>)}
+          </div>
+          <div className="project-links">
+            {github && <a href={github} target="_blank" rel="noreferrer"><i className="fab fa-github"></i> Code</a>}
+            {demo && <a href={demo} target="_blank" rel="noreferrer"><i className="fas fa-external-link-alt"></i> Démo</a>}
+          </div>
+        </div>
+      );
+    }
+
+    const projectsData = [
+      {
+        title: "CV Interactif Personnel",
+        description: "Portfolio CV en ligne avec HTML, CSS, jQuery et React. Design dark moderne avec animations et interactions avancées.",
+        techs: ["HTML5", "CSS3", "jQuery", "React"],
+        github: "https://github.com/atyqaicha-2003/cv-interactif",
+        demo: "https://atyqaicha-2003.github.io"
+      },
+      {
+        title: "Application To-Do List",
+        description: "Application de gestion de tâches avec filtres par catégorie, persistance localStorage et interface responsive.",
+        techs: ["JavaScript", "CSS Grid", "LocalStorage"],
+        github: "https://github.com/atyqaicha-2003/todo-app",
+        demo: null
+      },
+      {
+        title: "Dashboard Météo",
+        description: "Interface météo en temps réel via API publique. Prévisions sur 5 jours avec graphiques interactifs.",
+        techs: ["JavaScript", "OpenWeatherAPI", "Chart.js"],
+        github: "https://github.com/atyqaicha-2003/weather-dashboard",
+        demo: "https://atyqaicha-2003.github.io/weather"
+      },
+      {
+        title: "Gestion Bibliothèque (BDD)",
+        description: "Base de données relationnelle pour une bibliothèque universitaire. Modélisation MCD/MLD et requêtes SQL avancées.",
+        techs: ["MySQL", "PHP", "HTML", "CSS"],
+        github: "https://github.com/atyqaicha-2003/bibliotheque-db",
+        demo: null
+      },
+      {
+        title: "Jeu Snake Python",
+        description: "Jeu Snake classique avec Pygame. Système de scores, niveaux progressifs et interface graphique personnalisée.",
+        techs: ["Python", "Pygame", "OOP"],
+        github: "https://github.com/atyqaicha-2003/snake-python",
+        demo: null
+      }
+    ];
+
+    function ProjectsSection() {
+      const [filter, setFilter] = useState("Tous");
+      const filters = ["Tous", "Web", "Python", "Base de données"];
+
+      const filterMap = {
+        "Tous": () => true,
+        "Web": p => p.techs.some(t => ["HTML5","CSS3","jQuery","React","JavaScript","CSS","PHP","HTML"].includes(t)),
+        "Python": p => p.techs.includes("Python"),
+        "Base de données": p => p.techs.some(t => ["MySQL","SQL","LocalStorage"].includes(t))
+      };
+
+      const filtered = projectsData.filter(filterMap[filter]);
+
+      return (
+        <div>
+          <div className="project-filters">
+            {filters.map(f => (
+              <button key={f} className={"filter-btn" + (filter === f ? " active" : "")} onClick={() => setFilter(f)}>
+                {f}
+              </button>
+            ))}
+          </div>
+          <div className="projects-grid">
+            {filtered.map((p, i) => <ProjectCard key={i} number={i + 1} {...p} />)}
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('react-projects'));
+    root.render(<ProjectsSection />);
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>
